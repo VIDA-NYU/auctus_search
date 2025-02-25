@@ -42,13 +42,10 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://simonprovost.github.io/auctus-search"
-Documentation = "https://simonprovost.github.io/auctus-search"
 Changelog = "https://simonprovost.github.io/auctus-search/changelog"
 Repository = "https://github.com/simonprovost/auctus-search"
 Issues = "https://github.com/simonprovost/auctus-search/issues"
 Discussions = "https://github.com/simonprovost/auctus-search/discussions"
-Gitter = "https://gitter.im/auctus-search/community"
-Funding = "https://github.com/sponsors/simonprovost"
 
 [project.scripts]
 auctus-search = "auctus_search.cli:main"
