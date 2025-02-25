@@ -1,3 +1,4 @@
+import dataclasses
 from dataclasses import dataclass, field
 from typing import List, Dict, Any, Optional
 
@@ -21,6 +22,9 @@ class Metadata:
     columns: List[Dict[str, Any]] = field(default_factory=list)
     spatial_coverage: List[Dict[str, Any]] = field(default_factory=list)
     temporal_coverage: List[Dict[str, Any]] = field(default_factory=list)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return dataclasses.asdict(self)
 
 
 @dataclass

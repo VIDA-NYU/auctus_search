@@ -29,7 +29,7 @@ class AuctusSearchMixin:
         )
         self.selection_label_widget.style.font_size = "20px"
         self.output_area_widget: Output = Output()
-        self.search_query: Optional[str, List[str]] = None
+        self.search_query: Optional[Union[str, List[str]]] = None
 
     @ensure_non_empty_search_query
     @beartype
