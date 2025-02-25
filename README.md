@@ -99,9 +99,8 @@ Below is a concise, step-by-step example of how to use the `Auctus Search` libra
 ### **Cell 1: Import the Library**
 
 ```python
-from auctus_search import
-
-AuctusSearch  # This imports the main `AuctusSearch` class, which provides all the functionality we'll use.
+from auctus_search import AuctusSearch
+# This imports the main `AuctusSearch` class, which provides all the functionality we'll use.
 ```
 
 ### **Cell 2: Initialise An AuctusSearch Instance**
@@ -127,8 +126,8 @@ collection = search.search_datasets(search_query="Taxis", display_initial_result
 ```python
 filtered_collection = (
     collection
-    .with_types(
-        ["spatial"])  # Refine the search results to only include datasets that at least have a spatial component.
+    .with_types(["spatial"])  
+    # Refine the search results to only include datasets that at least have a spatial component.
     .with_number_of_rows_greater_than(100000)
     # Refine further to – after the with_types– only include datasets with more than 100,000 rows.
 )
