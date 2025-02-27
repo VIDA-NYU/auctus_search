@@ -16,9 +16,10 @@
 
 ![Auctus Search Cover](public/resources/auctus_search_main_cover.png)
 
-> [!NOTE]
-> [Marimo](https://github.com/marimo-team/marimo) is not yet supported/nor-tested but is in discussion for future
-> releases.
+> [!IMPORTANT]
+> 1) We highly recommend to explore the `/example` folder for Jupyter Notebook-based tutorials 🎉
+> 2) The following library is under active-development and is not yet _stable_. Expect bugs & frequent changes!
+> 3) [Marimo](https://github.com/marimo-team/marimo) is not yet supported/nor-tested but is in discussion for future releases.
 
 ## 🌆 Auctus Search –– In a Nutshell
 
@@ -37,11 +38,6 @@ For a more advanced usage, you can even `.profile_selected_dataset()` which uses
 For developers, it also allows you to integrate it all into your project, have a look at the `Auctus Search Mixin`
 in the [OSMNxMapping](https://github.com/VIDA-NYU/OSMNXMapping) – It is fully integrated for the user to benefits from
 the `Auctus Search` capabilities and most importantly the great `Auctus API` as a whole.
-
-> [!WARNING]
-> This library is currently in an **unstable** state and under active development.
-> Expect changes and new features very frequently.
-
 
 See further notebook-based examples in the `examples/` directory. 📓
 
@@ -164,6 +160,9 @@ Enjoy! 🥐
 
 ## 🗺️ Roadmap / Future Work
 
+> [!NOTE]  
+> For more about future works, explore the `issues` tab above!
+
 1) From labs to more general communities, we want to advance `Auctus Search` by attaining large unit-test coverage,
    integrating routines via `G.Actions`, and producing thorough documentation for users all around.
 
@@ -176,6 +175,9 @@ we are happy to welcome you to contribute to the library 🎄
 ---
 
 ## 🌁 API
+
+> [!IMPORTANT]
+> The following project is fully python-typed safe and uses the great [@beartype](https://github.com/beartype/beartype)! It should reduce side effects and better library usability on the user end side.
 
 The `Auctus Search` API is split into two main parts: the `AuctusSearch` class for searching, profiling, and loading datasets, and the `AuctusDatasetCollection` class for filtering and displaying results. Here's the rundown:
 
