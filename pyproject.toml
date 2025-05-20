@@ -5,13 +5,16 @@ build-backend = "pdm.backend"
 [project]
 name = "auctus-search"
 description = ""
-authors = [{name = "Provost Simon", email = "sgp9504@nyu.edu"}]
+authors = [
+     {name = "Provost Simon", email = "sgp9504@nyu.edu"}, # First author & maintainer
+     {name = "New York University", email = "fairuse@nyu.edu"}, # Copyright holder
+]
 license = "MIT"
 license-files = ["LICENSE"]
 readme = "README.md"
 requires-python = ">=3.9"
 keywords = []
-dynamic = ["version"]
+version = "0.0.0"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
